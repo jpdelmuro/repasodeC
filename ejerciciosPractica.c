@@ -86,7 +86,7 @@ int main(){
 
 */
 // Problema 7
-#include <stdio.h>
+/*#include <stdio.h>
 int main(){
 	int n,i,cont=0;
 	printf("Introduce un numero para saber si es primo: "); scanf("%d",&n);
@@ -101,6 +101,7 @@ int main(){
 		printf("%d es primo",n);
 	return 0;
 }
+*/
 
 
 
