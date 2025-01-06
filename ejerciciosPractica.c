@@ -144,6 +144,7 @@ int main(){
 */
 
 //problema 11 numeros enteros a romanos
+/*
 #include <stdio.h>
 int main(){
 	
@@ -202,7 +203,7 @@ int main(){
 	
 	return 0;
 }
-
+*/
 
 
 
