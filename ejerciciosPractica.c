@@ -102,8 +102,17 @@ int main(){
 	return 0;
 }
 */
-
-
+//problema 8 salario
+#include <stdio.h>
+int main(){
+	float salario;
+	float porcentaje = 0.10;
+	printf("Introduce tu salario: "); scanf("%f",&salario);
+	porcentaje = salario * porcentaje;
+	printf("Felicidades, tu nuevo salario es: %.2f",salario + porcentaje);
+	
+	return 0;
+}
 
 
 
