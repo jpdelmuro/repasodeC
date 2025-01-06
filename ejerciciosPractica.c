@@ -103,7 +103,7 @@ int main(){
 }
 */
 //problema 8 salario
-#include <stdio.h>
+/*#include <stdio.h>
 int main(){
 	float salario;
 	float porcentaje = 0.10;
@@ -113,10 +113,24 @@ int main(){
 	
 	return 0;
 }
+*/
+//problema 9 switch case
 
-
-
-
+#include <stdio.h>
+int main(){
+	int caso;
+	printf("Introduce el caso: "); scanf("%d",&caso);
+	switch(caso){
+		case 1:
+			printf("Caso 1");
+			break;
+		case 2:
+			printf("Caso 2");
+			break;
+		default:
+			printf("default");
+	}
+}
 
 
 
