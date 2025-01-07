@@ -269,6 +269,7 @@ int main(){
 }
 */
 // 15 funciones
+/*
 #include <stdio.h>
 int sumar(int a, int b);
 int main(){
@@ -283,3 +284,20 @@ int sumar(int a, int b){
 	int c = a + b;
 	return c;
 }
+*/
+// 16 recursividad
+#include <stdio.h>
+void recursivo(int a);
+int main(){
+	recursivo(5);
+	return 0;
+}
+void recursivo(int a){
+	if (a < 0)
+		return;
+	else{
+		printf("Numero actual %d\n",a);
+		recursivo(a-1);
+	}
+}
+
