@@ -255,16 +255,31 @@ int main(){
 }
 */
 //Problema 14 factorial
+/*
 #include <stdio.h>
 int main(){
-	int num = 5,fac = 1,i;
-	for(i = 1; i <= num; i++){
-		fac *= i;
+	int i, fac,sum=1;
+	printf("Introduce el numero del que quieres saber el factorial: "); scanf("%d",&fac);
+	for(i=1;i<=fac;i++){
+		sum *= i;
 	}
-	printf("%d",fac);
-	
+	printf("el resultado es: %d",sum);
 	
 	return 0;
 }
+*/
+// 15 funciones
+#include <stdio.h>
+int sumar(int a, int b);
+int main(){
+	int n1,n2;
+	printf("Introduce el primer numero que quieres sumar: "); scanf("%d",&n1);
+	printf("Introduce el segundo numero que quieres sumar: "); scanf("%d",&n2);
+	printf("El resultado es %d",sumar(n1,n2));
+	return 0;
+}
 
-
+int sumar(int a, int b){
+	int c = a + b;
+	return c;
+}
