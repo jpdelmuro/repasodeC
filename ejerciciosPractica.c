@@ -204,8 +204,37 @@ int main(){
 	return 0;
 }
 */
-
-
+//problema 12 cajero
+#include <stdio.h>
+int main(){
+	
+	int opcion, cantidad;
+	int saldo = 3000;
+	printf("Bienvenido al cajero\nElije una opcion\n1) Depositar\n2) Retirar\n3) Salir del cajero\nOpcion seleccionada: "); scanf("%d",&opcion);
+	switch(opcion){
+		case 1:
+			printf("Cuanto quieres depositar?: "); scanf("%d",&cantidad);
+			saldo += cantidad;
+			printf("Tu nuevo saldo es: %d",saldo);
+			break;
+		case 2:
+			printf("Cuanto quieres retirar?: "); scanf("%d",&cantidad);
+			if(cantidad > saldo){
+				printf("No puedes retirar mas del dinero que tienes");
+				break;
+			}else{
+				saldo -= cantidad;
+				printf("Tu nuevo saldo es: %d",saldo);
+				break;
+			}
+		case 3:
+			break;
+		default:
+			printf("No se entendió la opcion.");
+			
+	}
+	return 0;
+}
 
 
 
