@@ -242,7 +242,7 @@ int main(){
 }
 */
 //problema 13 Cambio de color usando stdlib
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
 int main(){
 	int n;
@@ -253,9 +253,18 @@ int main(){
 	
 	return 0;
 }
-
-
-
-
+*/
+//Problema 14 factorial
+#include <stdio.h>
+int main(){
+	int num = 5,fac = 1,i;
+	for(i = 1; i <= num; i++){
+		fac *= i;
+	}
+	printf("%d",fac);
+	
+	
+	return 0;
+}
 
 
