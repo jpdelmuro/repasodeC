@@ -241,7 +241,7 @@ int main(){
 	return 0;
 }
 */
-//problema 13 Cambio de color usando stdlib
+//														problema 13 Cambio de color usando stdlib
 /*#include <stdio.h>
 #include <stdlib.h>
 int main(){
@@ -254,7 +254,7 @@ int main(){
 	return 0;
 }
 */
-//Problema 14 factorial
+//															Problema 14 factorial
 /*
 #include <stdio.h>
 int main(){
@@ -268,7 +268,7 @@ int main(){
 	return 0;
 }
 */
-// 15 funciones
+// 																15 funciones
 /*
 #include <stdio.h>
 int sumar(int a, int b);
@@ -285,7 +285,8 @@ int sumar(int a, int b){
 	return c;
 }
 */
-// 16 recursividad
+// 																16 recursividad
+/*
 #include <stdio.h>
 void recursivo(int a);
 int main(){
@@ -300,4 +301,20 @@ void recursivo(int a){
 		recursivo(a-1);
 	}
 }
+*/
+// 																17 recursividad factorial
+#include <stdio.h>
+int factorial(int a, int i, int producto);
+int main(){
+	printf("%d",factorial(5, 0, 1));
+	return 0;
+}
 
+int factorial(int a, int i, int suma){
+	if(i > a){
+		return suma;
+	}else{
+		suma = factorial(a,i+1,suma*i);
+	}
+	
+}
