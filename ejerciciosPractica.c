@@ -306,7 +306,7 @@ void recursivo(int a){
 #include <stdio.h>
 int factorial(int a, int i, int producto);
 int main(){
-	printf("%d",factorial(5, 0, 1));
+	printf("%d",factorial(5, 1, 1));
 	return 0;
 }
 
