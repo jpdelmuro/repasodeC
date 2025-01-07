@@ -205,38 +205,54 @@ int main(){
 }
 */
 //problema 12 cajero
+/*
 #include <stdio.h>
 int main(){
 	
 	int opcion, cantidad;
 	int saldo = 3000;
-	printf("Bienvenido al cajero\nElije una opcion\n1) Depositar\n2) Retirar\n3) Salir del cajero\nOpcion seleccionada: "); scanf("%d",&opcion);
-	switch(opcion){
-		case 1:
-			printf("Cuanto quieres depositar?: "); scanf("%d",&cantidad);
-			saldo += cantidad;
-			printf("Tu nuevo saldo es: %d",saldo);
-			break;
-		case 2:
-			printf("Cuanto quieres retirar?: "); scanf("%d",&cantidad);
-			if(cantidad > saldo){
-				printf("No puedes retirar mas del dinero que tienes");
+	printf("Bienvenido al cajero\nElije una opcion\n1) Depositar\n2) Retirar\n3) Salir del cajero\n");
+	do{
+		printf("\nElige una opcion: "); scanf("%d",&opcion);
+		switch(opcion){
+			case 1:
+				printf("\nCuanto quieres depositar?: "); scanf("%d",&cantidad);
+				saldo += cantidad;
+				printf("Tu nuevo saldo es: %d\n",saldo);
 				break;
-			}else{
-				saldo -= cantidad;
-				printf("Tu nuevo saldo es: %d",saldo);
+			case 2:
+				printf("Cuanto quieres retirar?: "); scanf("%d",&cantidad);
+				if(cantidad > saldo){
+					printf("No puedes retirar mas del dinero que tienes");
+					break;
+				}else{
+					saldo -= cantidad;
+					printf("Tu nuevo saldo es: %d\n",saldo);
+					break;
+				}
+			case 3:
+				printf("Adios");
 				break;
-			}
-		case 3:
-			break;
-		default:
-			printf("No se entendió la opcion.");
-			
-	}
+			default:
+				printf("No se entendió la opcion.");
+				
+		}
+	}while(opcion != 3);
 	return 0;
 }
-
-
+*/
+//problema 13 Cambio de color usando stdlib
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+	int n;
+	printf("Escribe el 1"); scanf("%d",&n);
+	if(n == 1){
+		system("color 2");
+	}
+	
+	return 0;
+}
 
 
 
