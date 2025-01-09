@@ -303,6 +303,7 @@ void recursivo(int a){
 }
 */
 // 																17 recursividad factorial
+/*
 #include <stdio.h>
 int factorial(int a, int i, int producto);
 int main(){
@@ -317,4 +318,22 @@ int factorial(int a, int i, int suma){
 		suma = factorial(a,i+1,suma*i);
 	}
 	
+}*/
+//																18 numero par o impar
+
+#include <stdio.h>
+void paroimpar(int a);
+int main(){
+	paroimpar(4);
+	return 0;
 }
+void paroimpar(int a){
+	if(a%2 == 0)
+		printf("El numero %d es par",a);
+	else
+		printf("El numero %d es impar",a);
+}
+
+
+
+
