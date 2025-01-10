@@ -361,6 +361,7 @@ int main(){
 }
 */
 //															20 - positivo negativo
+/*
 #include <stdio.h>
 int main(){
 	int n = 3;
@@ -374,11 +375,36 @@ int main(){
 		}
 	}
 	printf("resultado-: %d\n",resultado);
-	
-	
-	
 	return 0;
 }
+*/
+//															21 - Numero primos
+#include <stdio.h>
+void esprimo(int n);
+int main(){
+	
+	int a,i;
+	printf("Hasta que numero quieres tu lista de numeros primos: "); scanf("%d",&a);
+	for(i=0;i<=a;i++){
+		esprimo(i);
+	}
+	return 0;
+}
+
+void esprimo(int n){
+	int i, cont = 0;
+	for(i = 1; i <= n; i++){
+		if(n % i == 0){
+			cont++;
+		}	
+	}
+	if(cont > 2){
+		return;
+	}else{
+		printf("El numero %d es primo\n",n);
+	}
+}
+
 
 
 
