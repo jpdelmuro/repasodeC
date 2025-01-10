@@ -334,7 +334,8 @@ void paroimpar(int a){
 		printf("El numero %d es impar",a);
 }
 */
-// 
+//															19 - de 5 en 5 while y for
+/*
 #include <stdio.h>
 int main(){
 	int n, i, a, j=0;
@@ -358,6 +359,31 @@ int main(){
 	}
 	return 0;
 }
+*/
+//															20 - positivo negativo
+#include <stdio.h>
+int main(){
+	int n = 3;
+	int i;
+	int resultado = 0;
+	for(i=1;i<=n;i++){
+		if(i % 2 == 0){
+			resultado -= i;
+		}else{
+			resultado += i;
+		}
+	}
+	printf("resultado-: %d\n",resultado);
+	
+	
+	
+	return 0;
+}
+
+
+
+
+
 
 
 
