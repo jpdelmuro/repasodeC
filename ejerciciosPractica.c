@@ -287,6 +287,7 @@ int sumar(int a, int b){
 */
 // 																16 recursividad
 /*
+
 #include <stdio.h>
 void recursivo(int a);
 int main(){
@@ -301,6 +302,7 @@ void recursivo(int a){
 		recursivo(a-1);
 	}
 }
+
 */
 // 																17 recursividad factorial
 /*
@@ -407,6 +409,7 @@ void esprimo(int n){
 }
 */
 // 												22 Suma de los primeros 20 numeros pares
+
 /*
 #include <stdio.h>
 int main(){
@@ -417,13 +420,12 @@ int main(){
 		printf("%d\n",cont);
 	}
 	printf("el resultado es %d\n",suma);
-
-
 	return 0;
 }
+
 */
 //												23 imprimir todas las letras
-
+/*
 #include <stdio.h>
 int main(){
 	char letra = 'a';
@@ -433,8 +435,22 @@ int main(){
 	}while(letra <= 'z');	
 	return 0;
 }
-
-
+*/
+//												24 arbol de asteriscos
+#include <stdio.h>
+int main(){
+	int i,n,j;
+	printf("De cuantos pisos quieres tu torre? "); scanf("%d",&n);
+	for(i=0; i<n ; i++){
+		printf("\n");
+		for(j=0; j<=i; j++){
+			printf("*");
+		}
+	}
+	
+	
+	return 0;
+}
 
 
 
