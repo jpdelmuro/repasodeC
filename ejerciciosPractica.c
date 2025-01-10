@@ -379,6 +379,7 @@ int main(){
 }
 */
 //															21 - Numero primos
+/*
 #include <stdio.h>
 void esprimo(int n);
 int main(){
@@ -404,10 +405,23 @@ void esprimo(int n){
 		printf("El numero %d es primo\n",n);
 	}
 }
+*/
+// 												22 Suma de los primeros 20 numeros pares
+/*
+#include <stdio.h>
+int main(){
+	int i,n=20,cont=0,suma=0;
+	for(i=0 ; i<20 ;i++){
+		cont +=2;
+		suma +=cont;
+		printf("%d\n",cont);
+	}
+	printf("el resultado es %d\n",suma);
 
 
-
-
+	return 0;
+}
+*/
 
 
 
