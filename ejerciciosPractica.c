@@ -320,7 +320,7 @@ int factorial(int a, int i, int suma){
 	
 }*/
 //																18 numero par o impar
-
+/*
 #include <stdio.h>
 void paroimpar(int a);
 int main(){
@@ -333,6 +333,34 @@ void paroimpar(int a){
 	else
 		printf("El numero %d es impar",a);
 }
+*/
+// 
+#include <stdio.h>
+int main(){
+	int n, i, a, j=0;
+	printf("Multiplos de 5 de 1 hasta el: "); scanf("%d",&n);
+	printf("Hacerlo con un\n1) for\n2) while\nOpcion: "); scanf("%d",&a);
+	switch(a){
+		case 1:
+			for(i=0;i<=n;i+=5){
+			printf("%d\n",i);
+		}
+		break;
+		case 2:	
+			while(j<n){
+				printf("%d\n",j);
+				j+=5;
+			}
+			break;
+		default:
+			printf("No se entendio la opcion");
+			break;
+	}
+	return 0;
+}
+
+
+
 
 
 
