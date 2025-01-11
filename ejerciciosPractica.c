@@ -514,7 +514,7 @@ int main(){
 */
 //												29 strcmp string.h
 // COMPARA 2 CADENAS, ES KEYSENSITIVE strcmp(referencia,comparacion); si son iguales, devuelve 0
-
+/*
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -527,6 +527,28 @@ int main(){
 		printf("Contrasena incorrecta");
 	return 0;
 }
+*/
+//												29.2 strcmp string.h uso real
+#include <stdio.h>
+#include <string.h>
+int main(){
+	char contrasena[] = "hola";
+	char intento[128];
+	int cont = 3;
+	printf("Ingrese la contrasena para entrar: ",cont); fflush(stdin); scanf("%s",&intento);
+	do{
+		if(strcmp(contrasena, intento) != 0){
+			cont--;
+			printf("Contrasena Incorrecta, intentos restantes %d intentelo de nuevo: ",cont); scanf("%s",&intento);
+		}else{
+			printf("Contrasena correcta");
+			break;
+		}
+	}while(cont > 1);
+	return 0;
+}
+
+
 
 
 
