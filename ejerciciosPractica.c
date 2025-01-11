@@ -452,6 +452,7 @@ int main(){
 }
 */
 //												25 punteros
+/*
 #include <stdio.h>
 int main(){
 	int a = 10;
@@ -462,7 +463,22 @@ int main(){
 	printf("direccion de b %d\n",b);
 	return 0;
 }
-
+*/
+//												26 swap con punteros
+#include <stdio.h>
+void swap(int *a, int *b){
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}
+int main(){
+	int a = 5;
+	int b = 10;
+	printf("el valor de a es %d y el de b es %d\n",a,b);
+	swap(&a,&b);
+	printf("el valor de a es %d y el de b es %d",a,b);
+	return 0;
+}
 
 
 
