@@ -529,6 +529,7 @@ int main(){
 }
 */
 //												29.2 strcmp string.h uso real
+/*
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -547,9 +548,17 @@ int main(){
 	}while(cont > 1);
 	return 0;
 }
-
-
-
+*/
+//											30 strlen
+#include <stdio.h>
+#include <string.h>
+int main(){
+	char cadena[500];
+	printf("Escribe cualquier palabra: ");
+	scanf("%s",&cadena);
+	printf("La longitud de la palabra es de %d digitos",strlen(cadena));
+	return 0;
+}
 
 
 
