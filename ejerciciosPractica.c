@@ -437,6 +437,7 @@ int main(){
 }
 */
 //												24 arbol de asteriscos
+/*
 #include <stdio.h>
 int main(){
 	int i,n,j;
@@ -447,6 +448,18 @@ int main(){
 			printf("*");
 		}
 	}
+	return 0;
+}
+*/
+//												25 punteros
+#include <stdio.h>
+int main(){
+	int a = 10;
+	int *b = &a;
+	printf("valor de a %d\n",a);
+	printf("valor de b %d\n",*b);
+	printf("direccion de a %d\n",&a);
+	printf("direccion de b %d\n",b);
 	return 0;
 }
 
