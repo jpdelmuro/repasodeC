@@ -482,6 +482,7 @@ int main(){
 }
 */
 //												27 strcpy string.h
+/*
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -493,6 +494,21 @@ int main(){
 	printf("%p\n",&origen);
 	return 0;
 }
+*/
+//												28 strcat string.h
+#include <stdio.h>
+#include <string.h>
+// concatena 2 cadenas
+int main(){
+	char cadena1[] = "Juan";
+	char cadena2[] = "Pablo";
+	
+	strcat(cadena1,cadena2);
+	printf("%s",cadena1);
+	
+	return 0;
+}
+
 
 
 
