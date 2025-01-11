@@ -465,6 +465,7 @@ int main(){
 }
 */
 //												26 swap con punteros
+/*
 #include <stdio.h>
 void swap(int *a, int *b){
 	int temp = *a;
@@ -479,6 +480,20 @@ int main(){
 	printf("el valor de a es %d y el de b es %d",a,b);
 	return 0;
 }
+*/
+//												27 strcpy string.h
+#include <stdio.h>
+#include <string.h>
+int main(){
+	char origen[] = "Programacion";
+	char destino[12];
+	strcpy(destino,origen);
+	printf("%s\n",destino);
+	printf("%p\n",&destino);
+	printf("%p\n",&origen);
+	return 0;
+}
+
 
 
 
