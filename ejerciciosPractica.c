@@ -482,6 +482,7 @@ int main(){
 }
 */
 //												27 strcpy string.h
+// COPIA UNA CADENA EN OTRO LADO strcpy(destino, origen);
 /*
 #include <stdio.h>
 #include <string.h>
@@ -496,16 +497,34 @@ int main(){
 }
 */
 //												28 strcat string.h
+// CONCATENA 2 CADENAS DE TEXTO STRCAT(DESTINO, FUENTE)
+/*
 #include <stdio.h>
 #include <string.h>
 // concatena 2 cadenas
 int main(){
 	char cadena1[] = "Juan";
 	char cadena2[] = "Pablo";
-	
+	strcat(cadena1," ");
 	strcat(cadena1,cadena2);
 	printf("%s",cadena1);
 	
+	return 0;
+}
+*/
+//												29 strcmp string.h
+// COMPARA 2 CADENAS, ES KEYSENSITIVE strcmp(referencia,comparacion); si son iguales, devuelve 0
+
+#include <stdio.h>
+#include <string.h>
+int main(){
+	char contrasena[] = "hola";
+	char intento[10];
+	printf("Introduce una contrasena: "); scanf("%s",&intento);
+	if(strcmp(contrasena,intento) == 0)
+		printf("Contrasena correcta");
+	else
+		printf("Contrasena incorrecta");
 	return 0;
 }
 
