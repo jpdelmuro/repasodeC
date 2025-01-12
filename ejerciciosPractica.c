@@ -590,7 +590,7 @@ int main(){
 	return 0;
 }
 */
-// 											32 strrchr string.h
+// 						33 strrchr string.h devuelve la cadena a partir de un caracter
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -598,8 +598,6 @@ int main(){
 	char car;
 	printf("A partir de que letra quieres buscar? "); scanf("%c",&car);
 	printf("%s",strrchr(rest,car));
-	
-	
 	return 0;
 }
 
