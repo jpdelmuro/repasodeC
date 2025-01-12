@@ -549,7 +549,8 @@ int main(){
 	return 0;
 }
 */
-//											30 strlen
+//											30 strlen string.h
+/*
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -559,6 +560,25 @@ int main(){
 	printf("La longitud de la palabra es de %d digitos",strlen(cadena));
 	return 0;
 }
+*/
+// 											31 strlwr string.h
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(){
+	char mayus[] = "HOLA BUENAS TARDES";
+	char minus[20];
+	strcpy(minus,mayus);
+	strlwr(minus);
+	printf("Cadena en mayusculas: %s\n",mayus);
+	printf("Cadena en minusculas: %s",minus);
+	return 0;
+}
+
+
+
+
+
 
 
 
