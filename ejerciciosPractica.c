@@ -577,6 +577,7 @@ int main(){
 }
 */
 // 											32 strupr string.h
+/*
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -588,6 +589,29 @@ int main(){
 	printf("Cadena en mayusculas: %s",mayus);
 	return 0;
 }
+*/
+// 											32 strrchr string.h
+#include <stdio.h>
+#include <string.h>
+int main(){
+	char rest[] = "abcdefghijklmnopqrstuvxyz";
+	char car;
+	printf("A partir de que letra quieres buscar? "); scanf("%c",&car);
+	printf("%s",strrchr(rest,car));
+	
+	
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
