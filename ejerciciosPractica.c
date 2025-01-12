@@ -512,7 +512,7 @@ int main(){
 	return 0;
 }
 */
-//												29 strcmp string.h
+//												29 strcmp() string.h
 // COMPARA 2 CADENAS, ES KEYSENSITIVE strcmp(referencia,comparacion); si son iguales, devuelve 0
 /*
 #include <stdio.h>
@@ -528,7 +528,7 @@ int main(){
 	return 0;
 }
 */
-//												29.2 strcmp string.h uso real
+//												29.2 strcmp() string.h uso real
 /*
 #include <stdio.h>
 #include <string.h>
@@ -549,7 +549,7 @@ int main(){
 	return 0;
 }
 */
-//											30 strlen string.h
+//											30 strlen() string.h
 /*
 #include <stdio.h>
 #include <string.h>
@@ -562,7 +562,7 @@ int main(){
 }
 */
 
-// 											31 strlwr string.h
+// 											31 strlwr() string.h
 /*
 #include <stdio.h>
 #include <string.h>
@@ -590,7 +590,7 @@ int main(){
 	return 0;
 }
 */
-// 						33 strrchr string.h devuelve la cadena a partir de un caracter
+// 						33 strrchr() string.h devuelve la cadena a partir de un caracter
 /*
 #include <stdio.h>
 #include <string.h>
@@ -603,6 +603,7 @@ int main(){
 }
 */
 // 						34 strrev() string.h invertir una cadena
+/*
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -610,6 +611,25 @@ int main(){
 	printf("%s\n",cad);
 	strrev(cad);
 	printf("%s",cad);
+	return 0;
+}
+*/
+// 						35 leer el contenido de un archivo
+#include <stdio.h>
+int main(){
+	FILE * archivo = fopen("texto.txt","r");
+	if(!archivo){
+		printf("No encontre el archivo solicitado");
+	}
+	
+	do{
+		char car = fgetc(archivo);
+		printf("%c",car);
+		if (feof(archivo)){
+			printf("==FIN==");
+		}
+	}while (!feof(archivo));
+	fclose(archivo);
 	return 0;
 }
 
