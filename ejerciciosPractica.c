@@ -563,6 +563,7 @@ int main(){
 */
 
 // 											31 strlwr string.h
+/*
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -572,6 +573,19 @@ int main(){
 	strlwr(minus);
 	printf("Cadena en mayusculas: %s\n",mayus);
 	printf("Cadena en minusculas: %s",minus);
+	return 0;
+}
+*/
+// 											32 strupr string.h
+#include <stdio.h>
+#include <string.h>
+int main(){
+	char minus[] = "hola buenas tardes";
+	char mayus[20];
+	strcpy(mayus,minus);
+	strupr(mayus);
+	printf("Cadena en minusculas: %s\n",minus);
+	printf("Cadena en mayusculas: %s",mayus);
 	return 0;
 }
 
