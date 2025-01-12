@@ -549,7 +549,8 @@ int main(){
 	return 0;
 }
 */
-//											30 strlen
+//											30 strlen string.h
+/*
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -559,6 +560,13 @@ int main(){
 	printf("La longitud de la palabra es de %d digitos",strlen(cadena));
 	return 0;
 }
+*/
+// 							31 Encontrar el mayor numero de un arreglo con apuntadores
+
+
+
+
+
 
 
 
