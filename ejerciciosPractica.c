@@ -591,6 +591,7 @@ int main(){
 }
 */
 // 						33 strrchr string.h devuelve la cadena a partir de un caracter
+/*
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -598,6 +599,17 @@ int main(){
 	char car;
 	printf("A partir de que letra quieres buscar? "); scanf("%c",&car);
 	printf("%s",strrchr(rest,car));
+	return 0;
+}
+*/
+// 						34 strrev() string.h invertir una cadena
+#include <stdio.h>
+#include <string.h>
+int main(){
+	char cad[] = "Hola buenas tardes";
+	printf("%s\n",cad);
+	strrev(cad);
+	printf("%s",cad);
 	return 0;
 }
 
