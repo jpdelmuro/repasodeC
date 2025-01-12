@@ -561,6 +561,7 @@ int main(){
 	return 0;
 }
 */
+<<<<<<< HEAD
 // 											31 strlwr string.h
 #include <stdio.h>
 #include <string.h>
@@ -573,6 +574,8 @@ int main(){
 	printf("Cadena en minusculas: %s",minus);
 	return 0;
 }
+=======
+>>>>>>> 9e00af574587f1e2d31cd530b22f275cb96475b3
 
 
 
