@@ -668,7 +668,8 @@ int main(){
 	return 0;
 }
 */
-//									37 uso de funciones
+//												37 uso de funciones
+/*
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
@@ -682,6 +683,7 @@ int random(){
 	int n = rand() % (10 - 1 + 1 ) + 1;
 	return n;
 }
+
 int main(){
 	saludar();
 	
@@ -693,10 +695,37 @@ int main(){
 	srand(time(NULL));
 	int i;
 	for(i=0;i<10;i++)
-		printf("\n%d",random());
+		printf("%d ",random());
+
 	return 0;
 }
-
+*/
+//										38 Ordenar 3 numeros con recursion, apuntadores y un swap
+#include <stdio.h>
+void swap(int *a, int *b){
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}
+int ordenar(int *a, int *b, int *c){
+	if(*a < *b && *b < *c){
+		return 0;
+	}else{
+		if(*a > *b){
+			swap(a,b);
+		}if(*b > *c){
+			swap(b,c);
+		}
+		ordenar(a,b,c);
+	}
+}
+int main(){
+	int n1,n2,n3;
+	printf("\nIngresa 3 numeros: \n"); scanf("%d %d %d",&n1,&n2,&n3);
+	ordenar(&n1,&n2,&n3);
+	printf("Los numeros ordenados son %d %d %d",n1,n2,n3);
+	return 0;
+}
 
 
 
