@@ -648,6 +648,7 @@ int main(){
 }
 */
 // 								36 buscar palabras en un archivo
+/*
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -666,8 +667,35 @@ int main(){
 	fclose(archivo);
 	return 0;
 }
-
-
+*/
+//									37 uso de funciones
+#include <stdio.h>
+#include <math.h>
+#include <time.h>
+void saludar(){
+	printf("Hola mundo!");
+}
+int sumar(int n1, int n2){
+	return n1 + n2;
+}
+int random(){
+	int n = rand() % (10 - 1 + 1 ) + 1;
+	return n;
+}
+int main(){
+	saludar();
+	
+	float n = 2.9;
+	ceil(n);
+	printf("\n%d",sumar(2,2));
+	printf("\n%f",ceil(n));
+	
+	srand(time(NULL));
+	int i;
+	for(i=0;i<10;i++)
+		printf("\n%d",random());
+	return 0;
+}
 
 
 
