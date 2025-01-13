@@ -647,7 +647,25 @@ int main(){
 	return 0;
 }
 */
-
+// 								36 buscar palabras en un archivo
+#include <stdio.h>
+#include <string.h>
+int main(){
+	FILE * archivo = fopen("texto.txt","r");
+	if (archivo == NULL)
+		printf("Archivo no encontrado");
+	
+	int cont = 0;
+	char palabra[] = "del";
+	char texto[100];
+	while(fscanf(archivo, "%s", texto) != EOF){
+		if(strcmp(texto,palabra) == 0)
+			cont++;
+	}
+	printf("la palabra aparece %d veces",cont);
+	fclose(archivo);
+	return 0;
+}
 
 
 
