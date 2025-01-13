@@ -615,6 +615,7 @@ int main(){
 }
 */
 // 						35 leer el contenido de un archivo
+/*
 #include <stdio.h>
 int main(){
 	FILE * archivo = fopen("texto.txt","r");
@@ -632,7 +633,20 @@ int main(){
 	fclose(archivo);
 	return 0;
 }
-
+*/
+// 						35.1 leer el contenido de un archivo
+/*
+#include <stdio.h>
+int main(){
+	FILE * archivo = fopen("texto.txt","r");
+	do{
+		char caracter = fgetc(archivo);
+		printf("%c",caracter);
+	}while(!feof(archivo));
+	fclose(archivo);
+	return 0;
+}
+*/
 
 
 
