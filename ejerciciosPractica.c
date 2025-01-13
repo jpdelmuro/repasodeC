@@ -701,6 +701,7 @@ int main(){
 }
 */
 //										38 Ordenar 3 numeros con recursion, apuntadores y un swap
+/*
 #include <stdio.h>
 void swap(int *a, int *b){
 	int temp = *a;
@@ -726,7 +727,18 @@ int main(){
 	printf("Los numeros ordenados son %d %d %d",n1,n2,n3);
 	return 0;
 }
+*/
+#include <stdio.h>
+void bin(n){
+	if(n > 1) bin(n/2);
+	printf("%d",n%2);
+	
+}
 
+int main(){
+	bin(10);
+	return 0;
+}
 
 
 
