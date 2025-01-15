@@ -728,18 +728,29 @@ int main(){
 	return 0;
 }
 */
+//											39 Numeros a binario con recursividad
+/*
 #include <stdio.h>
 void bin(n){
 	if(n > 1) bin(n/2);
 	printf("%d",n%2);
-	
 }
 
 int main(){
 	bin(10);
 	return 0;
 }
-
+*/
+//											40 Arreglos unidimensionales
+#include <stdio.h>
+int main(){
+	int a[5] = {1,2,3,4,5};
+	int len = sizeof(a) / sizeof(a[0]);
+	int i;
+	for(i=0;i<len;i++)
+		printf("%d",a[i]);
+	return 0;
+}
 
 
 
